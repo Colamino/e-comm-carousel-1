@@ -1,0 +1,182 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(33, 33, 160, 0.973);
+  
+  padding: .5rem 10rem;
+}
+
+.logo-container .menu-icons {
+  display: none;
+}
+
+.logo-container {
+  width: 200px;
+  height: 50px;
+}
+
+.logo-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.search-bar {
+  min-width: 500px;
+  display: flex;
+  align-items: center;
+
+  margin-right: 200px;
+}
+
+.search-bar input {
+  width: 100%;
+  border-radius: 100px 0 0 100px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+
+  padding: .5rem 1rem;
+}
+
+.search-bar input::placeholder{
+  font-size: 12px;
+}
+
+.searct-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  height: 100%;
+  border-radius: 0 100px 100px 0;
+  cursor: pointer;
+  
+  padding: 5px;
+}
+
+.searct-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+}
+
+.button-group .button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  gap: 4px;
+
+  position: relative;
+
+  margin-right: 20px;
+} 
+
+
+
+.button svg{
+  color: orange;
+  font-size: 25px;
+
+  transition: .5s ease;
+}
+
+.button-group .button:hover svg{
+  transform: scale(1.1);
+}
+
+.button p {
+  color: #FFFFFF;
+  font-size: 10px;
+}
+
+.total-circle {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  height: 20px;
+  width: 20px;
+  background-color: rgb(113, 115, 238);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 12px;
+
+}
+
+
+@media screen and (max-width: 400px) {
+  .navbar {
+    background-color: #FFFFFF;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+  }
+  .logo-container {
+    padding: 0;
+    width: fit-content;
+    align-items: center;
+    height: auto;
+  }
+  .logo-container img {
+    display: none;
+  }
+
+  .logo-container .menu-icons{
+    display: flex;
+    font-size: 35px;
+    align-items: center;
+  }
+
+  
+
+  .search-bar input {
+    display: none;
+  }
+
+  .search-bar{
+    margin: 0;
+    padding: 0;
+    min-width: unset;
+  }
+
+  .search-bar .searct-icon  {
+    margin: 0;
+    padding: 0;
+  }
+
+  .searct-icon svg {
+    width: 30px;
+    height: 30px;
+    margin-right: 100px;
+  }
+
+
+  .button-group p{
+    display: none;
+  }
+
+  .button-group .menu-hidden {
+    display: none;
+  }
+
+  .button .menu-icons {
+    font-size: 30px;
+    color: black;
+  }
+
+  .total-circle {
+    background-color: aqua;
+    top: -3px;
+    right: -7px;
+  }
+}
