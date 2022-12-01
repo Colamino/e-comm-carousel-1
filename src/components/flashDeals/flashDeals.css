@@ -4,6 +4,12 @@
 
 .rec.rec-arrow {
   margin: 0 10px;
+
+
+}
+
+.rec.rec-arrow:disabled {
+    visibility: hidden;
 }
 
 .heading {
@@ -254,10 +260,11 @@
     width: auto;
     position: relative;
     height: calc(100vh - 190px);
-    margin-right: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
   }
 
-  .flashDealsIteams-item:last-child {
+  .flashDealsIteams:last-child {
     margin-right: 0;
     
   }
